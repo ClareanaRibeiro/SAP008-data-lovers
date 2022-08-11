@@ -8,7 +8,7 @@ console.log(example, data);
 
 const rickandmorty = data.results;
 
-console.log(rickandmorty)
+
 
 // PRINTAR TODOS OS CARDS NA TELA:
 
