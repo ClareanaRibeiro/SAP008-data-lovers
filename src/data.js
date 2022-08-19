@@ -16,3 +16,4 @@ export const filterData3 = (filtroSelecionado, array) => {
   const filtro = array.filter((item) => item.status === filtroSelecionado);
   return filtro;
 };
+

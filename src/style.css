@@ -3,8 +3,116 @@
   src: url("./fonts/Hello\ Avocado.ttf");
 }
 
-main,
-option,
-nav {
+body {
   font-family: Avocado;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(217, 205, 169);
+}
+
+/*menu*/
+.navegacao ul {
+  list-style-type: none;
+  background-color: rgb(124, 140, 90);
+  color: rgb(217, 205, 169);
+  margin-left: none;
+  margin-right: none;
+  border-radius: 10px;
+  padding: 1vw;
+  margin-top: 0.1vw;
+}
+
+.navegacao ul li {
+  display: inline-block;
+}
+
+.linha {
+  padding: 1px;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.linha:hover {
+  color: rgb(86, 72, 115);
+}
+
+select {
+  border-radius: 5px;
+}
+
+.imagemHeader {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  border-radius: 10px;
+  width: 1000px;
+  height: 560px;
+  background-size: cover;
+}
+
+.divHeader {
+  background-color: rgb(217, 205, 169);
+  margin-bottom: 2vw;
+}
+
+.filtros {
+  display: inline-block;
+  padding: 10px;
+  font-size: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.filtros1 {
+  font-size: 25px;
+  margin-left: 10vw;
+}
+
+.filtros2 {
+  font-size: 25px;
+  margin-left: 5vw;
+}
+
+.filtros3 {
+  font-size: 25px;
+  margin-left: 5vw;
+}
+
+.filtros4 {
+  font-size: 25px;
+  margin-left: 5vw;
+}
+
+.filtro4 {
+  margin-right: 10vw;
+}
+
+.cardsBox {
+  background-color: rgb(124, 140, 90);
+  border-radius: 3vw;
+  box-shadow: 0 1vw 1vw rgb(106, 105, 105);
+  border-top: 0.1vw solid rgb(124, 140, 90);
+  border-bottom: 0.1vw solid rgb(124, 140, 90);
+  margin: 1vw;
+  padding: auto;
+  left: 15vw;
+  right: 10vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.textoCard {
+  list-style-type: none;
+  text-align: justify;
+}
+
+.imagemCard {
+  border-radius: 3vw;
 }

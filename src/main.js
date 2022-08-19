@@ -1,3 +1,4 @@
+
 import { filterData, filterData2, filterData3 } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
@@ -15,7 +16,7 @@ criaCard(rickandmorty);
 function criaCard(personagens) {
   const printarCard = personagens.map((personagem) => {
     const criandoCard = `
-        <div class = "cards">
+        <div class = "cardsBox">
             <div class = "imagem">
              <img class = "imagemCard" src="${personagem.image}">
              <div class = "name">${personagem.name}</div>
@@ -35,6 +36,7 @@ function criaCard(personagens) {
 
 // PEGOU VALOR DO QUE USUÁRIO SELECIONOU DE TIPO DE ESPÉCIE:
 document.querySelector("#especie").addEventListener("change", (event) => {
+
   const valor = event.target.value;
   // CHAMANDO A FUNÇÃO DO FILTERDATA E DANDO O VALUE E A ARRAY COMO PARÂMETRO
   const especieFiltrada = filterData(valor, rickandmorty);
@@ -62,3 +64,4 @@ document.querySelector("#status").addEventListener("change", (event) => {
 
 //     criaCard(ordemalfabeticaFiltrada);
 //   });
+
