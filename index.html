@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li class="menu"><a href="index.html">Home</a></li>
+        <li class="menu"><a href="sobreaserie.html">Sobre a série</a></li>
+        <li class="menu"><a href="episodios.html">Episódios</a></li>
+      </ul>
+    </nav>
+
+    <div class="divHeader"><img class="imagemprincipal" src="img/tamanhoorigin.jpg" alt="Imagem Rick and Morty">
+    </div>
+    <p class="calculo" id="exibirCalculo">Você está vendo 100% dos personagens</p>
+  </header>
+
+  <main>
+    <section class="filtros">
+      <label for="Filtro1" class="filtros1">Espécie:</label>
+      <select name="filtro1" id="especie">
+        <option selected disable value="">Todos</option>
+        <option value="Human">Humano 🙎‍♂️ </option>
+        <option value="Humanoid">Humanóide 🧟 </option>
+        <option value="Alien">Alien 👽 </option>
+        <option value="Poopybutthole">Poopybutthole 💩 </option>
+        <option value="Mytholog">Mitológico 🦄 </option>
+        <option value="Animal">Animal 🦊 </option>
+        <option value="Vampire">Vampiro 🧛 </option>
+        <option value="Robot">Robô 🤖 </option>
+        <option value="Cronenberg">Cronenberg 👾 </option>
+        <option value="Disease">Doença 🤒 </option>
+        <option value="Parasite">Parasita 🦠 </option>
+        <option value="unknown">Desconhecido ❔ </option>
+      </select>
+
+      <label for="Filtro2" class="filtros2">Gênero:</label>
+      <select name="filtro2" id="genero">
+        <option selected disable value="">Todos</option>
+        <option value="Male">Masculino 👦 </option>
+        <option value="Female">Feminino 👧 </option>
+        <option value="unknown">Desconhecido ❔ </option>
+      </select>
+
+      <label for="Filtro3" class="filtros3">Status:</label>
+      <select name="filtro3" id="status">
+        <option selected disable value="">Todos</option>
+        <option value="Alive">Vivo ❤️ </option>
+        <option value="Dead">Morto 💀 </option>
+        <option value="unknown">Desconhecido ❔ </option>
+      </select>
+
+      <label for="Filtro4" class="filtros4">Ordem Alfabética:</label>
+      <select name="filtro4" id="ordemalfabetica">
+        <option selected disable value="">Todos</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+    </section>
+
+
+    <div class="cards" id="exibirCards"></div>
+
+    <footer class="footer">
+      <p> &copy; Copyright Rick and Morty desenvolvido por <a href="https://github.com/ClareanaRibeiro"
+          target="_blank">CLAREANA RIBEIRO</a> e <a href="https://github.com/Bellalimalima" target="_blank">ISABELLA
+          LIMA</a> - 2022 </p>
+    </footer>
+
+  </main>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
